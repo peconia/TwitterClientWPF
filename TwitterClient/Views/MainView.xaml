@@ -1,0 +1,31 @@
+﻿<Window x:Class="TwitterClient.Views.MainView"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Twitter Client" Height="800" Width="1200"
+        xmlns:prism ="http://prismlibrary.com/"
+        prism:ViewModelLocator.AutoWireViewModel="True"
+        xmlns:regions="http://www.codeplex.com/CompositeWPF"
+        WindowStartupLocation="CenterScreen"
+        xmlns:inf="clr-namespace:TwitterClient.Infrastructure;assembly=TwitterClient.Infrastructure">
+    <Grid>
+        <Grid.Background>
+            <ImageBrush ImageSource="{DynamicResource background}" TileMode="Tile" ViewportUnits="Absolute" Viewport="0,0,300,300"/>
+        </Grid.Background>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="3*"/>
+            <ColumnDefinition Width="1*"/>
+        </Grid.ColumnDefinitions>
+        <!-- Feed -->
+        <Border BorderBrush="Black" BorderThickness="2">
+            <Grid Margin="15" Grid.Column="0" >
+                <ContentControl x:Name="FeedContent" prism:RegionManager.RegionName="{x:Static inf:RegionNames.FeedRegion}"></ContentControl>
+            </Grid>
+        </Border>
+        <!-- Actions -->
+        <Border BorderBrush="Black" BorderThickness="2">
+            <Grid Margin="30" Grid.Column="1">
+                <ContentControl x:Name="ActionsContent" prism:RegionManager.RegionName="{x:Static inf:RegionNames.ActionsRegion}"></ContentControl>
+            </Grid>
+        </Border>
+    </Grid>
+</Window>

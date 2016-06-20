@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.40629.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TwitterClient", "TwitterClient\TwitterClient.csproj", "{606ABB2C-EEAF-4F96-A497-C78633597985}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TwitterClient.Infrastructure", "TwitterClient.Infrastructure\TwitterClient.Infrastructure.csproj", "{6048C973-BDC9-429A-94C4-998315D062A1}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{606ABB2C-EEAF-4F96-A497-C78633597985}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{606ABB2C-EEAF-4F96-A497-C78633597985}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{606ABB2C-EEAF-4F96-A497-C78633597985}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{606ABB2C-EEAF-4F96-A497-C78633597985}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6048C973-BDC9-429A-94C4-998315D062A1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6048C973-BDC9-429A-94C4-998315D062A1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6048C973-BDC9-429A-94C4-998315D062A1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6048C973-BDC9-429A-94C4-998315D062A1}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
